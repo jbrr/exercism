@@ -51,7 +51,6 @@ class GameTest extends \PHPUnit_Framework_TestCase
 
     public function testPerfectGame()
     {
-        $this->markTestSkipped();
         $this->rollMany(12, 10);
 
         $this->assertEquals(300, $this->game->score());
